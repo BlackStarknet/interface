@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Noto Serif', serif;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.countdown h2, .countdown p {
+  margin-bottom: 0;
+}
+
+.countdown h2 {
+  line-height: 100%;
+  margin: 0 auto;
+}
+
+.countdown p {
+  margin: 0 auto;
+}
+
+.countdown {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.countdown-content,
+.countdown-content-final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+.countdown-content-item {
+    text-align: center;
+}
+
+.countdown-content h2,
+.countdown-content-final h2 {
+    font-size: 70px; /* Default font size */
+    font-weight: 100;
+}
+
+/* Responsive Media Query for smaller screens */
+@media (max-width: 768px) {
+    .countdown-content h2,
+    .countdown-content-final h2 {
+        font-size: 40px; /* Smaller font size for smaller screens */
+    }
+
+    .countdown-content, .countdown-content-final {
+        gap: 20px;
+    }
+}
+
+/* Additional media query for even smaller screens */
+@media (max-width: 480px) {
+    .countdown-content h2,
+    .countdown-content-final h2 {
+        font-size: 30px; /* Even smaller font size for very small screens */
+    }
+
+    .countdown-content, .countdown-content-final {
+        flex-direction: column; /* Stack items vertically */
+    }
+}
+
+.countdown-content-final {
+  display: none;
+}
