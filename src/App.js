@@ -47,16 +47,16 @@ function App() {
         <section className="countdown" id="countdown">
           <div className="countdown-content">
             <div className="countdown-content-item">
-              <h2>{countdown.seconds}</h2>
-            </div>
-            <div className="countdown-content-item">
-              <h2>{countdown.minutes}</h2>
+              <h2>{countdown.days}</h2>
             </div>
             <div className="countdown-content-item">
               <h2>{countdown.hours}</h2>
             </div>
             <div className="countdown-content-item">
-              <h2>{countdown.days}</h2>
+              <h2>{countdown.minutes}</h2>
+            </div>
+            <div className="countdown-content-item">
+              <h2>{countdown.seconds}</h2>
             </div>
           </div>
           
